@@ -1,0 +1,325 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.nav {
+    width: 100%;
+    position: fixed;
+    height: 60px;
+    background-color: #000015;
+    z-index: 1;
+}
+
+.nav ul {
+    padding: 0;
+    margin: 0;
+    margin-right: 30px;
+    float: left;
+}
+
+.nav ul li {
+    position: relative;
+    list-style: none;
+    display: inline-block;
+}
+
+.nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: rgb(148, 130, 71);
+    line-height: 60px;
+    width: 120px;
+    text-align: center;
+}
+
+.nav ul li a:hover {
+    background: black;
+}
+
+.nav ul ul {
+    position: absolute;
+    top: 60px;
+    display: none;
+}
+
+.nav ul li:hover>ul {
+    display: block;
+    background-color: #000015;
+}
+
+.nav ul ul ul li {
+    position: relative;
+    top: -60px;
+    left: 160px;
+    display: block;
+    text-decoration: none;
+    color: rgb(148, 130, 71);
+    line-height: 60px;
+    width: 160px;
+    text-align: center;
+    background-color: #000015;
+}
+
+.vechungtoi {
+    position: static;
+    height: 660px;
+    background-image: url("https://i.pinimg.com/736x/86/83/7e/86837ea96c1439bd94bda25e417e6170.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: rgb(148, 130, 71);
+}
+
+.mota {
+    height: 560px;
+    background-color: rgba(0, 0, 21, .7);
+    padding-top: 100px;
+    backdrop-filter: none;
+}
+
+.txt {
+    width: 70% !important;
+    margin: auto !important;
+}
+
+.tieude {
+    text-transform: uppercase;
+    font-size: 70px;
+    color: rgb(148, 130, 71);
+    text-align: center;
+    font-weight: 800;
+    max-width: 100%;
+}
+
+.txt p {
+    text-align: center;
+    color: aliceblue;
+    margin-top: 70px;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+}
+
+.icons a {
+    padding: 0px 5px;
+}
+
+.chamsoctoc {
+    background-image: url(https://sapvuottocnam.com/wp-content/uploads/2017/01/3-san-pham-sap-vuot-toc-nam-by-vilain-duoc-ua-chuong-nhat-2-min-8041960a-c80c-4745-8be8-847f02d2b580.jpg?v=1529077423174);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 660px;
+}
+
+.chamsoctoc div div div {
+    box-sizing: border-box;
+    padding: 20px;
+    border: 1px solid gray;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5%;
+    box-shadow: #000015;
+    margin: 30px;
+    height: 200px;
+    width: 250px;
+    background-color: rgb(105, 79, 105);
+    box-shadow: 0 8px 40px 0 rgb(45 57 231 / 37%);
+    backdrop-filter: blur(4px);
+    transition: all 1s ease;
+}
+
+.chamsoctoc div div div:hover {
+    transform: scale(1.05);
+}
+
+.hiddendiv {
+    position: fixed;
+    width: 75%;
+    height: 60%;
+    background-color: aliceblue;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    display: none;
+}
+
+div div div .thongtinchung {
+    margin: 0;
+    padding: 0;
+    width: 15px;
+    height: 15px;
+    background-color: aliceblue;
+}
+
+#closeimg:hover {
+    content: url(1.png);
+}
+
+.backgroundblur {
+    position: fixed;
+    z-index: 1;
+    height: 0%;
+    width: 100%;
+    background-color: rgba(0, 0, 21, .7);
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: block;
+    backdrop-filter: blur(3px);
+    transition: all 0.5s ease;
+}
+
+.backgroundblur.active {
+    height: 100%;
+}
+
+div>div>div>.title {
+    margin: 0;
+    padding: 0;
+    background-color: #009688;
+    height: 70px;
+    width: 100%;
+    border-radius: 0%;
+    box-shadow: none;
+    border: 0px;
+}
+
+div>div>div>.title:hover {
+    transform: scale(1);
+}
+
+div>div>div>.content {
+    margin: 0;
+    padding: 0;
+    background-color: aliceblue;
+    height: 300px;
+    width: 100%;
+    border-radius: 0%;
+    box-shadow: none;
+    border: 0px;
+}
+
+div>div>div>.content:hover {
+    transform: scale(1);
+}
+
+.nuochoa {
+    background-color: #000;
+    height: 660px;
+}
+
+.nuochoa-store {
+    margin: auto;
+    justify-content: space-evenly;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #000;
+}
+
+.nuochoa-image {
+    height: 180px;
+    width: 300px;
+}
+
+.nuochoa-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.nuochoa-image img:hover {
+    opacity: 0.8;
+}
+
+.nuochoa-store-list {
+    background-color: #fff;
+    height: 300px;
+    width: 300px;
+    margin: 20px;
+    transition: all 1s ease;
+}
+
+.nuochoa-store-list:hover {
+    background-color: #000;
+    transform: scale(1.05);
+}
+
+.nuochoa-store-list:hover h4 {
+    color: #fff;
+}
+
+.nuochoa-store-list:hover span {
+    color: #fff;
+}
+
+.nuochoa-store-list:hover button {
+    background-color: #fff;
+    color: #000;
+}
+
+.nuochoa-store-list:hover button:hover {
+    background-color: rgb(139, 139, 139);
+}
+
+.h4bt {
+    margin-top: 15px;
+    color: black;
+    font-weight: 700;
+    height: 30px;
+    transition: color 1s ease;
+}
+
+.nuochoa-store span {
+    color: black;
+    transition: color 1s ease;
+}
+
+.store-text-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.buybutton {
+    display: block;
+    background-color: black;
+    width: 100px;
+    height: 35px;
+    color: #fff;
+    cursor: pointer;
+    border: 0px;
+    transition: all 1s ease;
+}
+
+.contact {
+    padding: 64px 16px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 300px;
+}
+
+.submitbutton {
+    border: 0px;
+    padding: 8px 16px;
+    margin: 16px 0;
+    float: right;
+    background-color: black;
+    color: #fff;
+    cursor: pointer;
+}
+
+.submitbutton:hover {
+    background-color: rgb(71, 71, 71);
+}
